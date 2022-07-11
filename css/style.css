@@ -1,0 +1,23 @@
+
+.margin-top-10 { margin-top: 10px; }
+.margin-top-15 { margin-top: 15px; }
+.margin-top-20 { margin-top: 20px; }
+.margin-top-110 { margin-top: 110px; }
+.margin-bottom-20 { margin-bottom: 20px; }
+.margin-top-150 { margin-top: 150px; }
+.border-calc {
+    padding: 10px;
+    border: 1px solid #BFBFBF;
+    background-color: white;
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+.text-right {
+    text-align: right;
+}
+.bold {
+    font-weight:bold;
+    font-size:24px;
+}
+textarea {
+    resize: none;
+}

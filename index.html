@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <title>Calculator</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico">
+      <!--CSS-->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="./css/style.css">
+      <!--JS-->
+      <script type="text/javascript" src="./js/calculator.js"></script>
+   </head>
+   <body>
+      <div class="container margin-top-20 margin-bottom-20">
+         <div class="row margin-top-110">
+            <div class="col-md-offset-4 col-md-4 col-xs-12 border-calc">
+               <img src="./img/logo.png" width="150px" />
+               <div class="row">
+                  <div class="col-xs-12">
+                     <input id="txtInput" class="form-control text-right" type="text" readonly="true" />
+                     <textarea id="txtOutput" class="form-control text-right bold" rows="2" readonly="true"></textarea>
+                  </div>
+               </div>
+               <div class="row margin-top-10">
+                  <div class="col-xs-3">
+                     <button onclick="cmdClearDisplay()" title="CLEAR" class="btn btn-block btn-warning"><strong>AC</strong></button>
+                  </div>
+                  <div class="col-xs-3"></div>
+                  <div class="col-xs-3"></div>
+                  <div class="col-xs-3">
+                     <button onclick="cmdWriteInput('/')" class="btn btn-block btn-primary"><strong>/</strong></button>
+                  </div>
+               </div>
+               <div class="row margin-top-10">
+                  <div class="col-xs-3">
+                     <button onclick="cmdWriteInput('7')" class="btn btn-block"><strong>7</strong></button>
+                  </div>
+                  <div class="col-xs-3">
+                     <button onclick="cmdWriteInput('8')" class="btn btn-block"><strong>8</strong></button>
+                  </div>
+                  <div class="col-xs-3">
+                     <button onclick="cmdWriteInput('9')" class="btn btn-block"><strong>9</strong></button>
+                  </div>
+                  <div class="col-xs-3">
+                     <button onclick="cmdWriteInput('*')" class="btn btn-block btn-primary"><strong>*</strong></button>
+                  </div>
+               </div>
+               <div class="row margin-top-10">
+                  <div class="col-xs-3">
+                     <button onclick="cmdWriteInput('4')" class="btn btn-block"><strong>4</strong></button>
+                  </div>
+                  <div class="col-xs-3">
+                     <button onclick="cmdWriteInput('5')" class="btn btn-block"><strong>5</strong></button>
+                  </div>
+                  <div class="col-xs-3">
+                     <button onclick="cmdWriteInput('6')" class="btn btn-block"><strong>6</strong></button>
+                  </div>
+                  <div class="col-xs-3">
+                     <button onclick="cmdWriteInput('-')" class="btn btn-block btn-primary"><strong>-</strong></button>
+                  </div>
+               </div>
+               <div class="row margin-top-10">
+                  <div class="col-xs-3">
+                     <button onclick="cmdWriteInput('1')" class="btn btn-block"><strong>1</strong></button>
+                  </div>
+                  <div class="col-xs-3">
+                     <button onclick="cmdWriteInput('2')" class="btn btn-block"><strong>2</strong></button>
+                  </div>
+                  <div class="col-xs-3">
+                     <button onclick="cmdWriteInput('3')" class="btn btn-block"><strong>3</strong></button>
+                  </div>
+                  <div class="col-xs-3">
+                     <button onclick="cmdWriteInput('+')" class="btn btn-block btn-primary"><strong>+</strong></button>
+                  </div>
+               </div>
+               <div class="row margin-top-10">
+                  <div class="col-xs-6">
+                     <button onclick="cmdWriteInput('0')" class="btn btn-block"><strong>0</strong></button>
+                  </div>
+                  <div class="col-xs-3">
+                     <button onclick="cmdWriteInput('.')" class="btn btn-block"><strong>.</strong></button>
+                  </div>
+                  <div class="col-xs-3">
+                     <button onclick="cmdCalculate()" class="btn btn-block btn-success"><strong>=</strong></button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
